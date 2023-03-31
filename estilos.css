@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*resete geral */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    /*para grudar o conteudo */
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    background-color: lightgrey;
+}
+
+header{
+    background-color:rgb(148, 148, 148);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /*para mudar o cursor para maozinha */
+}
+
+i#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none; /*para nao aparecer as opçoes*/
+}
+
+/* para tirar as bolinhas */
+menu > ul{
+    list-style-type: none;
+}
+
+/* link que esta dentro do menu
+poderia por so o menu > a, que ai ter o mesmo
+ressultando, mas esse e o caminho certo */
+menu > ul > li > a {
+    display: block;
+    padding: 10px; /* para fazer espaçamento entre linhas */
+    text-decoration: none; /* para tirar o link */
+    background-color: rgb(87, 87, 87);
+    color: white; /* para trocar a cor da letra do link  */
+    text-align: center; /* para centralizar */
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: gray;
+} 
+
+main {
+    width: 90%;
+    background-color: white;
+    margin: auto; /* para centralizar */
+    margin-top: 10px; /* para nao ficar grudado no menu*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2{
+    padding-bottom: 20px; /*para separar titulo do paragrafo*/
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px; /*para dar um espaço no inicio de cada paragrafo*/
+}
