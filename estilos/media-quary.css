@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints === Medidas da w3c ===
+-----------------------------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992 até 1200px
+Grandes telas ex: TV: acima de 1200px
+*/
+
+/*telas pequenas ate celular vai mostrar o hamburguinho 
+comecou de 768 para cima ai vai mostrar o menu de forma normal*/
+@media screen and (min-width:768px) {
+    /*para menu hamburguinho desaparecer, assim esconde o menu*/
+    i#burguer{
+        display: none;
+    }
+    /*para aparecer o menu*/
+    menu{
+        display: block;
+    }
+    /*para deixar o menu um do lado do outro*/
+    menu > ul > li{
+        display: inline-block;
+    }
+    /*quando tem umatela muito grande o texto fica muito
+    complido,acaba ficando ruim de ler
+    ENTAO, denina uma largura fixa para o main, 
+    entao ele vai crescer ate 768, quando a tela for grande 
+    o main vai ficar com 768, quer dizer que mesmo que a tela for 
+    grande ele vai travar e nao vai aumentar o main=conteudo  */
+    main{
+        width: 768px;
+    }
+}
