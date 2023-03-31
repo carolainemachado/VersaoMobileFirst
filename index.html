@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-quary.css">  
+    <title>Mobile First</title>
+    </head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opçao 1</a></li>
+                <li><a href="#">Opçao 2</a></li>
+                <li><a href="#">Opçao 3</a></li>
+                <li><a href="#">Opçao 4</a></li>
+                <li><a href="#">Opçao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Quaries Versao Mobile First</h2>
+
+            <p><b>Qual é o conceito mobile first?</b>
+            é um projeto que faz a criação de projetos web e sites primeiro em dispositivos móveis, para depois fazer adaptações para o desktop e outras plataformas, ao contrário do que ainda acontece na maioria das vezes.</p>
+
+            <p><b>Porque utilizar o mobile first?</b>
+            O mobile first é importante para garantir a credibilidade da marca. Além de aproximar o cliente do empreendimento, facilitando as estratégias de marketing, por exemplo, o uso de ferramentas mobile deixa tudo mais inovador, cômodo e prático para o usuário.</p>   
+            
+            <p><b>Como utilizar o mobile first?</b>
+            goPara aplicar essa metodologia basta você criar ou editar seu site pensando primeiramente na estrutura do celular. Ou seja, comece pelo desenvolvimento no dispositivo móvel e depois leve-o para o desktop. Semelhante ao que os programadores fazem ao desenvolverem aplicativos.</p>
+
+            <p><b>Quem criou o mobile first?</b>
+            Uma das principais tendências de marketing e tecnologia dos últimos anos. A ideia de mobile first foi criada por Luke Wroblewski, Diretor de Produto do Google, em 2010. De acordo com esse conceito, o desenvolvimento de sites e demais plataformas digitais deveria considerar os dispositivos móveis em primeiro lugar.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptates laboriosam consequuntur dolores officia eos modi rem deleniti. Quibusdam, quasi pariatur. Et cumque doloremque praesentium nihil explicabo odio magnam perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita at dolores, impedit rem dolore iusto tenetur repellendus alias officia aperiam itaque inventore asperiores, nisi neque cumque id suscipit sequi.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque, libero vero ut saepe dolorum minima inventore culpa sapiente, ex iste perspiciatis tempore ab doloribus quae, deserunt ducimus. Quibusdam, consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, eos possimus velit facere, ex et iure nostrum iste ratione beatae sequi dolores magnam autem est vero laboriosam nobis aliquid nihil.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptates laboriosam consequuntur dolores officia eos modi rem deleniti. Quibusdam, quasi pariatur. Et cumque doloremque praesentium nihil explicabo odio magnam perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita at dolores, impedit rem dolore iusto tenetur repellendus alias officia aperiam itaque inventore asperiores, nisi neque cumque id suscipit sequi.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+            
+        }
+
+
+
+        function clickMenu() {
+
+          if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+            
+          }else{
+            itens.style.display = 'block'  
+            }
+        }
+    </script>
+</body>
+</html>
